@@ -4,5 +4,6 @@ instance_tenancy="default"
 
   tags = {
     Name = "VPC_test"
+    Description = "Thru Cloud"
   }
 }
