@@ -1,9 +1,9 @@
-resource "aws_vpc" "test_vpc" {
-cidr_block="10.0.0.0/16"
-instance_tenancy="default"
+resource "aws_instance" "demo1" {
+ami="ami-0900fe555666598a2"
+instance_type="t2.micro"
 
-  tags = {
-    Name = "VPC_test"
-    Description = "Thru Cloud - CLI"
-  }
+tags={
+Name="demo-ec2-TF-cloud"
+environment="prod"
+}
 }
